@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    z-index: 0;
+
+    animation-name: EpilepsyAnimation;
+    animation-duration: 0.1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+@keyframes EpilepsyAnimation {
+    0%{
+        background-color: rgb(255, 0, 0);
+    }
+
+    100%{
+        background-color: white;
+    }
+
+}
+
+.movingBox {
+    width: 200px;
+    height: 300px;
+    background-color: rebeccapurple;
+    background-image:url("Monch.gif");
+    background-size: 200px;
+    background-repeat: repeat;
+    z-index: 1;
+    margin: auto;
+    margin-top: 5%;
+
+    animation-name: Monch;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Monch{
+    0%{
+        border-radius: 0px;
+        margin-left: 30%;
+    }
+
+    25%{
+        margin-top: 25%;
+    }
+
+    50%{
+        border-radius: 150px;
+        margin-left: 60%;
+    }
+
+    75%{
+        margin-top: 0%;
+    }
+
+    100%{
+        margin-left:30%;
+    }
+}
